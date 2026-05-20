@@ -5,3 +5,4 @@ He de recalcar que por seguridad , todos los proyectos aqui desarrollados han si
 
 - Dashboard de rendimiento para soporte tecnico
   
+![Portada](https://github.com/Walle-Chingg-Uparela/Mis-proyectos/img/P1.jpg)
