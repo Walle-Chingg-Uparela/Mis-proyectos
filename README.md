@@ -6,3 +6,7 @@ He de recalcar que por seguridad , todos los proyectos aqui desarrollados han si
 - Dashboard de rendimiento para soporte tecnico
   
 ![Banner](img/P1.jpg)
+
+<a href="https://github.com/Walle-Chingg-Uparela/Mis-proyectos">
+  <img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/repositorycard.jpg" width="400"/>
+</a>
