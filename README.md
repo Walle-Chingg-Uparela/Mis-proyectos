@@ -7,6 +7,6 @@ He de recalcar que por seguridad , todos los proyectos aqui desarrollados han si
   
 ![Banner](img/P1.jpg)
 
-<a href="https://github.com/Walle-Chingg-Uparela/Mi-proyectos/Dashboard-de-rendimiento-para-soporte-tecnico">
+<a href="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/tree/main/Dashboard%20de%20rendimiento%20para%20soporte%20tecnico">
   <img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/P1.jpg" width="800"/>
 </a>
