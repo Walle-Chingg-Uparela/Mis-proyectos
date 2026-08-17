@@ -1,4 +1,4 @@
-## Dashboard De rendimiento para soporte técnico
+## Dashboard de rendimiento para soporte técnico
 
 ## Contexto
 
