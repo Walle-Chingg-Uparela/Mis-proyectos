@@ -38,6 +38,20 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 
 ## Diseño del tablero
 ###  Wireframe inicial
+┌─────────────────────────────────────────────────────┐
+│                    TÍTULO                           │
+├─────────────┬───────────────────────────────────────┤
+│             │ KPI 1 | KPI 2 | KPI 3 | KPI 4         │
+│             ├───────────────────────┬───────────────┤
+│             │                       │               │
+│ FILTROS     │   Área anual          │ Promedio      │
+│             │   soportes            │ por agente    │
+│             │                       │               │
+│             ├───────────────────────┼───────────────┤
+│             │                       │               │
+│             │ Soportes por día      │ Producto      │
+│             │                       │ dominante     │
+└─────────────┴───────────────────────┴───────────────┘
 ### Primera implementación
 ### Iteraciones
 ### Diseño final
