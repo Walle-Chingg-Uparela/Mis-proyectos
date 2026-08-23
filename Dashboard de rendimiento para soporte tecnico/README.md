@@ -36,6 +36,8 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 
 ## Modelado y lógica
 
+
+
 ## Diseño del tablero
 ###  Wireframe inicial
 
