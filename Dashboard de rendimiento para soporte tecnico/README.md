@@ -46,22 +46,27 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 - durante su primera implementación se decidió realizar la actualización de los datos de manera manual como parte del proceso de pruebas mientras se realizaba el estándar de los datos
 - una vez estandarizado el modelo, se comenzó con la automatización de actualización y envió del reporte a través de un flujo simple construido desde Power Automate para él envió del reporte al final de cada semana.
 ## Elementos visuales
-### KPIs
-### Tendencia mensual
+### KPIs: 
+- el total de soportes registrados en el año y los promedios de soportes realizados al mes y al día 
+### Tendencia mensual:
+- Un gráfico histórico con el cual verificar temporadas altas y bajas en la demanda del servicio de soporte
 ### Soportes por agente
+- Un gráfico de barras horizontal para exponer el número de soportes realizados por cada uno de los agentes del equipo
 ### Soportes por día
+- Un gráfico de barras vertical para analizar la intensidad en la demanda de servicio de soporte por cada día en la semana 
 ### Soportes por producto
-### Soportes por prioridad
-
+- Un Treemap para identificar el dispositivo con mayores requerimientos para soporte o asesoría en el uso para aplicaciones de clientes
 ## Interactividad
 ### Filtros
+Con la intención de hacer el tablero un poco más dinámico en la trazabilidad del avance del servicio, se aplicaron filtros temporales y categóricos a fin de analizar de forma más detallada el rendimiento del servicio de soporte técnico.
 - mes
 - año
 - Agente
 - Producto
 ## Resultado final
-
+Al final, logre desarrollar una plataforma que me permitiera compactar la información no solo como un reporte semanal sino también como un visor para tomar decisiones junto con los otros procesos de la compañía en pro de lograr un mejor acercamiento con el equipo de soporte
 ## Tecnologías usadas
+- Zervise
 - Excel
 - Power Bi
 - Power Automate
