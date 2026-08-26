@@ -40,6 +40,8 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 
 ## Diseño del tablero
 <img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/tabla_de_soportes.jpg" alt="Modelo de datos" width="500">
+
+
 ###  Wireframe inicial
 
 ### Primera implementación
