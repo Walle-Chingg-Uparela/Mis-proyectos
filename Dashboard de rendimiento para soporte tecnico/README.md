@@ -35,11 +35,11 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
   - La columna Fecha pasa a ser tipo Fecha
 
 ## Modelado y lógica
-
+<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/Tabla%20de%20soportes.jpg" alt="Modelo de datos" width="900">
 
 
 ## Diseño del tablero
-<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/Tabla%20de%20soportes.jpg" alt="Modelo de datos" width="900">
+
 
 
 ###  Wireframe inicial
