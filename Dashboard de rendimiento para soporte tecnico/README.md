@@ -39,15 +39,12 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 
 
 ## Diseño del tablero
-
-
-
 ###  Wireframe inicial
 
+- la idea inicial consistía en realizar un reporte simple y resumido del rendimiento en la oficina de ingeniería frente a los soportes atendidos en el tiempo
 ### Primera implementación
-### Iteraciones
-### Diseño final
-
+- durante su primera implementación se decidió realizar la actualización de los datos de manera manual como parte del proceso de pruebas mientras se realizaba el estándar de los datos
+- una vez estandarizado el modelo, se comenzó con la automatización de actualización y envió del reporte a través de un flujo simple construido desde Power Automate para él envió del reporte al final de cada semana.
 ## Elementos visuales
 ### KPIs
 ### Tendencia mensual
@@ -57,7 +54,14 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 ### Soportes por prioridad
 
 ## Interactividad
-
+### Filtros
+- mes
+- año
+- Agente
+- Producto
 ## Resultado final
 
 ## Tecnologías usadas
+- Excel
+- Power Bi
+- Power Automate
