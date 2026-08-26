@@ -1,23 +1,29 @@
-## Dashboard de rendimiento para soporte técnico
+# Dashboard de rendimiento para soporte técnico
 
 ## Contexto
 
-En una oficina de ingeniería se generan diariamente múltiples actividades de soporte técnico. Sin una adecuada visualización y seguimiento, resulta difícil identificar tendencias, distribución de carga y comportamiento de la operación.
+En operaciones de soporte técnico se generan múltiples registros asociados a solicitudes, actividades y requerimientos. Sin una adecuada visualización y seguimiento, puede resultar difícil identificar tendencias, distribución de carga y comportamiento de la operación.
+
+Este proyecto presenta el desarrollo de un dashboard orientado al análisis y visualización de información de soporte técnico.
 
 ## Objetivos
 
-De forma que, se plantean las siguientes preguntas para el debido análisis del volumen de información generado por el proceso de ingeniería.
+A partir de los datos disponibles se plantearon las siguientes preguntas de análisis:
 
-1. ¿cuántos soportes van en total del año 2026?
-2. ¿Como ha evolucionado el volumen de soportes mes a mes?
-3. ¿cuál es la concentración de soportes por cada uno de los ingenieros del equipo?
-4. ¿a qué productos se les presta mayor cantidad de soportes?
-5. ¿Cuál es la distribución de los soportes en la semana?
-6. ¿cuál es la distribución según la prioridad del soporte?
+1. ¿Cuál es el volumen total de soportes durante el periodo de análisis?
+2. ¿Cómo evoluciona el volumen de soportes a través del tiempo?
+3. ¿Cómo se distribuyen los soportes entre los responsables?
+4. ¿Qué productos concentran la mayor cantidad de soportes?
+5. ¿Cuál es la distribución de los soportes durante la semana?
+6. ¿Cómo se distribuyen los soportes según su prioridad?
 
 ## Fuente y estructura de datos
 
-La fuente de datos está basada en la simulación de una base de datos de seguimiento de soportes realizados desde el mes de junio del año 2025, sin embargo, a fin de proteger datos sensibles y de realizar una propuesta de visualización de los datos, la estructura se desarrolla de la siguiente manera.
+Para el desarrollo del proyecto se utilizó una base de datos simulada de seguimiento de soportes.
+
+Con el objetivo de mantener el proyecto libre de información sensible, los datos utilizados fueron anonimizados y adaptados para fines demostrativos.
+
+La estructura de datos contiene las siguientes variables:
 
 - Ticket
 - Estatus
@@ -26,47 +32,122 @@ La fuente de datos está basada en la simulación de una base de datos de seguim
 - Agente
 - Producto
 
-## preparación y transformación
+## Preparación y transformación
 
-- Dado que la solicitud entre las preguntas especifica hacer el reporte de los soportes realizados únicamente en el año 2026 se hace filtrado por año, descartando aquellos soportes realizados en el año 2025.
-- Se hace cambios del tipo de dato en algunas columnas
-  - La columna ticket pasa a ser una columna con valores de tipo entero
-  - Las columnas de tipo Prioridad, Agente y Producto pasan a ser de tipo texto
-  - La columna Fecha pasa a ser tipo Fecha
+Durante la etapa de preparación se realizaron diferentes transformaciones para adecuar los datos al análisis:
+
+- Definición del periodo de análisis.
+- Conversión de tipos de datos.
+- Normalización de variables categóricas.
+- Conversión de la variable Fecha al tipo de dato correspondiente.
+- Creación de variables derivadas para facilitar el análisis temporal.
+
+Entre las variables derivadas se encuentran:
+
+- Día
+- Mes
+- Año
+- Mes_Año
+- Día de la semana
 
 ## Modelado y lógica
+
 <img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/Tabla%20de%20soportes.jpg" alt="Modelo de datos" width="900">
 
 
-## Diseño del tablero
-###  Wireframe inicial
+El modelo se estructuró a partir de una tabla principal de registros de soporte.
 
-- la idea inicial consistía en realizar un reporte simple y resumido del rendimiento en la oficina de ingeniería frente a los soportes atendidos en el tiempo
+La variable Fecha se utilizó como base para el análisis temporal, mientras que las variables Agente y Producto permitieron realizar análisis comparativos y de distribución.
+
+A partir del modelo se desarrollaron medidas en DAX para obtener indicadores como:
+
+- Total de soportes
+- Promedio de soportes por día
+- Promedio de soportes por mes
+- Promedio de soportes por agente
+
+## Diseño del tablero
+
+### Wireframe inicial
+
+La propuesta inicial buscó establecer una distribución sencilla que permitiera visualizar los principales indicadores y facilitar la interacción con los datos.
+
 ### Primera implementación
-- durante su primera implementación se decidió realizar la actualización de los datos de manera manual como parte del proceso de pruebas mientras se realizaba el estándar de los datos
-- una vez estandarizado el modelo, se comenzó con la automatización de actualización y envió del reporte a través de un flujo simple construido desde Power Automate para él envió del reporte al final de cada semana.
+
+Se desarrolló una primera versión funcional del dashboard con los principales indicadores y visualizaciones.
+
+Esta versión permitió validar la estructura, distribución de los elementos y comportamiento de los datos.
+
+### Iteraciones
+
+Durante el desarrollo se realizaron diferentes ajustes relacionados con:
+
+- Distribución de los elementos.
+- Organización de las visualizaciones.
+- Ordenamiento temporal.
+- Interacción entre filtros y gráficos.
+- Presentación de indicadores.
+- Legibilidad y aprovechamiento del espacio disponible.
+
+### Diseño final
+
+La versión final integra los principales indicadores y visualizaciones en una única interfaz, buscando facilitar la interpretación de los datos y mantener una presentación clara y compacta.
+
 ## Elementos visuales
-### KPIs: 
-- el total de soportes registrados en el año y los promedios de soportes realizados al mes y al día 
-### Tendencia mensual:
-- Un gráfico histórico con el cual verificar temporadas altas y bajas en la demanda del servicio de soporte
+
+### KPIs
+
+Se incorporaron indicadores para mostrar:
+
+- Total de soportes
+- Promedio de soportes por mes
+- Promedio de soportes por día
+
+### Tendencia mensual
+
+Gráfico de área utilizado para visualizar la evolución del volumen de soportes a través del tiempo.
+
 ### Soportes por agente
-- Un gráfico de barras horizontal para exponer el número de soportes realizados por cada uno de los agentes del equipo
+
+Gráfico de barras horizontal utilizado para comparar el volumen de soportes asociado a cada responsable.
+
 ### Soportes por día
-- Un gráfico de barras vertical para analizar la intensidad en la demanda de servicio de soporte por cada día en la semana 
+
+Gráfico de barras vertical utilizado para analizar la distribución de los soportes durante los diferentes días de la semana.
+
 ### Soportes por producto
-- Un Treemap para identificar el dispositivo con mayores requerimientos para soporte o asesoría en el uso para aplicaciones de clientes
+
+Treemap utilizado para identificar los productos con mayor cantidad de registros de soporte.
+
+### Soportes por prioridad
+
+Gráfico circular utilizado para visualizar la distribución de los registros según su nivel de prioridad.
+
 ## Interactividad
-### Filtros
-Con la intención de hacer el tablero un poco más dinámico en la trazabilidad del avance del servicio, se aplicaron filtros temporales y categóricos a fin de analizar de forma más detallada el rendimiento del servicio de soporte técnico.
-- mes
-- año
+
+Se incorporaron filtros para permitir diferentes perspectivas de análisis sobre la información.
+
+Los filtros utilizados permiten segmentar los datos por:
+
+- Fecha
+- Mes
+- Año
 - Agente
 - Producto
+
+También se incorporó una opción para restablecer los filtros aplicados.
+
 ## Resultado final
-Al final, logre desarrollar una plataforma que me permitiera compactar la información no solo como un reporte semanal sino también como un visor para tomar decisiones junto con los otros procesos de la compañía en pro de lograr un mejor acercamiento con el equipo de soporte
-## Tecnologías usadas
-- Zervise
-- Excel
-- Power Bi
-- Power Automate
+
+El resultado es un dashboard interactivo orientado a la visualización y análisis de registros de soporte técnico.
+
+La solución permite consultar indicadores generales, identificar tendencias y explorar la distribución de los registros mediante diferentes dimensiones de análisis.
+
+El proyecto fue desarrollado como ejercicio de aplicación de herramientas de análisis y visualización de datos.
+
+## Tecnologías utilizadas
+
+- Microsoft Power BI
+- Power Query
+- DAX
+- Microsoft Excel
