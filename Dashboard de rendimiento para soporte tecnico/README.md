@@ -78,6 +78,8 @@ Se desarrolló una primera versión funcional del dashboard con los principales 
 
 Esta versión permitió validar la estructura, distribución de los elementos y comportamiento de los datos.
 
+<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/DBS_V1.jpg" alt="prototipo de modelo" width="900">
+
 ### Iteraciones
 
 Durante el desarrollo se realizaron diferentes ajustes relacionados con:
