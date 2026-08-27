@@ -12,9 +12,9 @@ A partir de los datos disponibles se plantearon las siguientes preguntas de aná
 
 1. ¿Cuál es el volumen total de soportes durante el periodo de análisis?
 2. ¿Cómo evoluciona el volumen de soportes a través del tiempo?
-3. ¿Cómo se distribuyen los soportes entre los responsables?
-4. ¿Qué productos concentran la mayor cantidad de soportes?
-5. ¿Cuál es la distribución de los soportes durante la semana?
+3. ¿Cuál es la distribución de los soportes durante la semana?
+4. ¿Cómo se distribuyen los soportes entre los responsables?
+5. ¿Qué productos concentran la mayor cantidad de soportes?
 6. ¿Cómo se distribuyen los soportes según su prioridad?
 
 ## Fuente y estructura de datos
@@ -103,23 +103,23 @@ El resultado es un dashboard interactivo orientado a la visualización y anális
 
 Se incorporaron indicadores para mostrar:
 
-- Total de soportes
-- Promedio de soportes por mes
-- Promedio de soportes por día
+- Soportes Totales
+- Soportes por mes
+- Soportes por día
 
-### Tendencia mensual
+### Tendencia mensual - Demanda de casos en el tiempo
 
 Gráfico de área utilizado para visualizar la evolución del volumen de soportes a través del tiempo.
 
-### Soportes por agente
-
-Gráfico de barras horizontal utilizado para comparar el volumen de soportes asociado a cada responsable.
-
-### Soportes por día
+### Soportes por día - Promedio de casos en la semana
 
 Gráfico de barras vertical utilizado para analizar la distribución de los soportes durante los diferentes días de la semana.
 
-### Soportes por producto
+### Rendimiento de agentes
+
+Gráfico de barras horizontal utilizado para comparar el volumen de soportes asociado a cada responsable.
+
+### Demanda de soportes por producto
 
 Treemap utilizado para identificar los productos con mayor cantidad de registros de soporte.
 
