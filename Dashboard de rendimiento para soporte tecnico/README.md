@@ -97,7 +97,7 @@ La versión final integra los principales indicadores y visualizaciones en una �
 
 El resultado es un dashboard interactivo orientado a la visualización y análisis de registros de soporte técnico.La solución permite consultar indicadores generales, identificar tendencias y explorar la distribución de los registros mediante diferentes dimensiones de análisis.
 
-<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/P1.jpg" width="800"/>
+<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/P1.jpg" width="900"/>
 
 ## Elementos visuales
 
