@@ -93,6 +93,8 @@ Durante el desarrollo se realizaron diferentes ajustes relacionados con:
 
 La versión final integra los principales indicadores y visualizaciones en una única interfaz, buscando facilitar la interpretación de los datos y mantener una presentación clara y compacta.
 
+<img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/P1.jpg" width="800"/>
+
 ## Elementos visuales
 
 ### KPIs
