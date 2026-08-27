@@ -93,6 +93,8 @@ Durante el desarrollo se realizaron diferentes ajustes relacionados con:
 
 La versión final integra los principales indicadores y visualizaciones en una única interfaz, buscando facilitar la interpretación de los datos y mantener una presentación clara y compacta.
 
+El resultado es un dashboard interactivo orientado a la visualización y análisis de registros de soporte técnico.La solución permite consultar indicadores generales, identificar tendencias y explorar la distribución de los registros mediante diferentes dimensiones de análisis.
+
 <img src="https://github.com/Walle-Chingg-Uparela/Mis-proyectos/blob/main/img/P1.jpg" width="800"/>
 
 ## Elementos visuales
@@ -139,17 +141,15 @@ Los filtros utilizados permiten segmentar los datos por:
 
 También se incorporó una opción para restablecer los filtros aplicados.
 
-## Resultado final
-
-El resultado es un dashboard interactivo orientado a la visualización y análisis de registros de soporte técnico.
-
-La solución permite consultar indicadores generales, identificar tendencias y explorar la distribución de los registros mediante diferentes dimensiones de análisis.
-
-El proyecto fue desarrollado como ejercicio de aplicación de herramientas de análisis y visualización de datos.
-
 ## Tecnologías utilizadas
-
-- Microsoft Power BI
-- Power Query
-- DAX
 - Microsoft Excel
+- Power Query
+- Microsoft Power BI
+- DAX
+
+## Escalabilidad del proyecto a corto y mediano plazo 
+
+### en el corto plazo
+- Se pretende ir mejorando las métricas mostradas en el tablero y automatizar la generación y él envió del reporte a cada una de las partes interesadas, mediante Power Automate utilizando un flujo simple para el envio automatico del reporte desde el correo electronico.
+### en el mediano plazo 
+- Se busca optimizar el registro de los datos desde una plataforma amigable con clientes externos e internos.
